@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+a {
+    &:link {
+        color: $light_grey;
+    }
+    &:visited {
+        color: $light_grey;
+    }
+    &:hover {
+        color: black;
+    }
+}
+
+body {
+    font-size: $font-base-size;
+    font-weight: $font-base-weight;
+    font-family: $font-base-sans-family;
+}
+
+ul {
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+@mixin any-mixin($prop, $values...)
+{
+    #{"-webkit-" + $prop}: $values;
+     #{"-khtml-" + $prop}: $values;
+       #{"-moz-" + $prop}: $values;
+         #{"-o-" + $prop}: $values;
+                    $prop: $values;
+}
+
+.nav-button {
+    position: absolute;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+.rope {
+    width: 30px;
+    height: 360px;
+    margin: 0 auto;
+    background-image: url("/images/rope.png");
+    background-repeat: repeat-y;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    padding: 0 15px;
+}
+
+#page-wrapper {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    right: 0;
+    height: 100%;
+}
+
+#page {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    top: 15%;
+}
+
+#ropePerson {
+    left: 50px;
+    top: $ropePersonOffset;
+    &:hover {
+        top: $ropePersonOffset + 30px;
+    }
+}
+
+#ropeLog {
+    left: 130px;
+    top: $ropeLogOffset;
+    &:hover {
+        top: $ropeLogOffset + 30px;
+    }
+}
+
+#ropeBlog {
+    left: 200px;
+    top: $ropeBlogOffset;
+    &:hover {
+        top: $ropeBlogOffset + 30px;
+    }
+}
