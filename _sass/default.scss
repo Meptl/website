@@ -1,28 +1,5 @@
 @charset "utf-8";
 
-a {
-    &:link {
-        color: $light_grey;
-    }
-    &:visited {
-        color: $light_grey;
-    }
-    &:hover {
-        color: black;
-    }
-}
-
-body {
-    font-size: $font-base-size;
-    font-weight: $font-base-weight;
-    font-family: $font-base-sans-family;
-}
-
-ul {
-    padding-top: 10px;
-    list-style-type: none;
-}
-
 @mixin any-mixin($prop, $values...)
 {
     #{"-webkit-" + $prop}: $values;
