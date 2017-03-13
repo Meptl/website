@@ -11,7 +11,7 @@ So I write all my posts and pages in markdown files and Jekyll converts the asso
 It integrates with Sass so my CSS is slightly less verbose than normal CSS.
 But the best part - probably the only part I care about - is I can manage all my pages as a file heirarchy.
 
-I've spent too long saying wordson a temp blog post.
+I've spent too long saying words on a temp blog post.
 Here's the default post with pronouns changed since I seem to be a stickler for grammar.
 
 I’ll find this post in my `_posts` directory.
