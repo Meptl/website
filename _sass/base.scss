@@ -17,42 +17,52 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
 }
 
 h1 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 2rem;
+    font-size: 2rem;
+    margin-bottom: 0.9rem;
 }
 
 h3 {
-  font-size: 1.75rem;
+    font-size: 1.75rem;
+    margin-bottom: 0.8rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
 }
 
 h5 {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.6rem;
 }
 
 h6 {
-  font-size: 1rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
 }
 
 ul {
-  padding-top: 10px;
-  padding-left: 1.5em;
-  list-style-type: disc;
+    padding-top: 10px;
+    padding-left: 1.5em;
+    list-style-type: disc;
 
 }
 

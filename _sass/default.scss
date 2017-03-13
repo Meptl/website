@@ -9,6 +9,12 @@
                     $prop: $values;
 }
 
+.ornament {
+    position: relative;
+    top: -30px;
+    left: 5px;
+}
+
 .nav-button {
     position: absolute;
     cursor: pointer;
@@ -18,7 +24,7 @@
 
 .rope {
     width: 30px;
-    height: 360px;
+    height: $ropeLength;
     margin: 0 auto;
     background-image: url("/images/rope.png");
     background-repeat: repeat-y;

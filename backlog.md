@@ -6,26 +6,17 @@ title:  "Backlog"
 # The Backlog
 Here's ideas, research, and progress.
 
-## Point-to-point ethernet repeater using wireless technology
-Two devices that extend ethernet communication wirelessly. Each device would have a female ethernet port and send all data received from this
-port to the other device. Ideally, I should use a method of wireless communication that has a means of securing communication.
-
-RONJA, AKA lasers.
-
-### Bluetooth
-HC-05, a common bluetooth module, uses Bluetooth 2.0+EDR which is limited to around 2.1 Mbit/s.
-Look for Bluetooth 3.0+HS or the +HS qualifier. This has theoretical 24 Mbit/s. The technology initiates over bluetooth then creates
-a communication channel through wifi. Neat. Keep in mind this would require both endpoints to have wifi/bluetooth chips.
-Try to avoid Bluetooth 4.0+LE, LE stands for low-energy. It's likely these can just switch to high speed modes, but word around
-the block is most 4.0 devices don't support high speed.
-
-If I used bluetooth this could potentially be prototyped with arduinos. It would be a PoE arduino with a bluetooth module attached.
-Bluetooth has the added benefit of secure communication.
-
-I've been finding the PoE systems for arduinos difficult to find.
-PoE may be limited to sub-Gigabit speeds on the arduino. A bit more research would need to be done on PoE spec.
+{% for log in site.backlog %}
+  <h2>
+    <a href="{{ log.url }}">{{ log.title }}</a>
+  </h2>
+{% endfor %}
 
 ## Hourglass Watch
+Though I've gone the microcontroller route, the circuit seems so simple that it could potentially be made with simple electronic components.
+Like a button and flip-flop under a XOR gate governing a timing circuit.
+Only problem is communicating with the display. Perhaps, an array of LEDs could be a substitute.
+
 ### Trinket Prototype
 I've created a prototype using the Adafruit Trinket, 128x32 OLED display, and 150MaH LiPo battery.
 There was no system for charging the battery during use and no female JST socket on the Trinket (though I could've soldered one)
@@ -82,6 +73,10 @@ I think I might do an IR breakline prototype to get all the maths down. Here's m
 ## Parking spot detection using aerial drones
 
 ## Filesystem using voice
+Flat filesystem filtered using a voice interface.
+"Show me everything from last week's project"
+
+Idea: EVERYTHING IS A SYMLINK.
 
 ## Replace my laptop keyboard with a superior version
 Current keyboard for N240BU Clevo keyboard: CVM14C23US-4301. Can't get any datasheets on it.
@@ -92,3 +87,8 @@ These laptop ribbon cables potentially transmit the raw matrix data from the key
 
 ## Correlation between typing speed and intelligence
 ## Truffle generation system
+
+# MonetizeAP
+Replace advertisement with your own advertisement links when acting as access point.
+Even better and more illegal: hijack wireless traffic and inject your advertisement into links.
+Replace amazon links with your referral link.
